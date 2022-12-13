@@ -49,6 +49,7 @@ s
         &Btn {
             margin: 5px 20px;
             text-decoration: underline;
+            cursor: pointer;
         }
     }
 }

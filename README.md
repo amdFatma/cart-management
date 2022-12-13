@@ -1,55 +1,44 @@
-Initialiser du projet:
+Project initiator:
 
-- A partir du root du folder, lancer un `yarn install`
+- From the root of the folder, run `yarn install`
 
-- Puis lancer les deux commandes suivantes
+- Then run the following two commands
     `yarn app:serve` et `yarn server:serve`
 
-- le projet s'initialise avec une api répondant à l'url suivante
+- the project is initialized with an api responding to the following url
     SERVER http://localhost:3000/cart
     APP  http://localhost:8080/
 
 
-**TODO #1**
+**DONE**
 
-- En tant qu'utilisateur, j'ai besoin de me rendre sur la page panier
-    - création d'une page `CART`
+- As a user, I need to go to the shopping cart page
+    - creating a `CART` page
 
-- En tant qu'utilisateur, j'ai doit pouvoir consulter le contenu de mon panier
-    - création d'un composant de type panier.
+- As a user, I must be able to consult the contents of my basket
+    - creating a shopping cart component.
 
-- En tant qu'utilisateur, j'ai doit pouvoir consulter le contenu de mon panier
-    - mise en place d'un call permettant de récupérer les données du panier
+- As a user, I must be able to consult the contents of my basket
+    - setting up a call to retrieve the cart data
 
-- En tant qu'utilisateur, je dois pouvoir consulter les informations suivantes
-    nom, ref, image, prix, quantité
+- As a user, I need to be able to view the following information
+    name, ref, image, price, quantity
 
-- En tant qu'utilisateur, je dois pouvoir faire varier la quantité de chaque produit
+- As a user, I need to be able to vary the quantity of each product
 
-- En tant qu'utilisateur, je dois pouvoir supprimer un produit du panier
+- As a user, I need to be able to remove a product from the cart
 
-- En tant qu'utilisateur, je dois pouvoir consulter le total du panier
+- As a user, I need to be able to view the cart total
 
-**TODO #2**
+- Add a minicart in the header of the application: it will contain a reminder of the quantity of products in the basket
 
-- Ajouter un minicart dans le header de l'application
-- il contiendra un rappel de la quantity de produits du panier
+- As a user, I need to be able to click on the minicart to view the cart
 
-- En tant qu'utilisateur, je dois pouvoir cliquer sur le minicart pour afficher le panier
-sous une forme flottante --  ok
+- this basket resumes the operation already seen on the page `CART``
 
-- ce panier reprend le fonctionnement déjà vu sur la page `CART``
+- As a user, when I delete a product from my cart: a confirmation modal is displayed to validate my action
 
-**TODO #3 BONUS**
+- As a user, I can choose a delivery method
 
-- En tant qu'utilisateur, lorsque je supprime un produit de mon panier
-- une modale de confirmation s'affiche pour valider mon action
-
-**TODO #4 BONUS**
-
-- En tant qu'utilisateur, je peux choisir un mode de livraison
-
-**TODO #5 BONUS**
-
-- test unitaire
+- unit test
 

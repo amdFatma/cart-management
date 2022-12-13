@@ -16,10 +16,12 @@
       <div class="Article__detailsRight">
         <div class="Article__detailsPrice">{{ productPrice }} €</div>
         <div class="Article__detailsQuantity">
-          <span :class="{ 'Article__detailsQuantity--disable' : product.qty === 1 }"
-                @click="decrementProductQuantity">-</span>
+          <div class="Article__detailsQuantityBtn" 
+                  :class="{ 'Article__detailsQuantity--disable' : product.qty === 1 }"
+                  @click="decrementProductQuantity">-</div>
           <span class="Article__detailsQuantityValue">{{ product.qty }}</span>
-          <span @click="incrementProductQuantity">+</span>
+          <div class="Article__detailsQuantityBtn" 
+                  @click="incrementProductQuantity">+</div>
         </div>
       </div>
     </div>
@@ -90,19 +92,26 @@ export default {
     }
 
     &Btn {
-    position: absolute;
-    text-decoration: underline;
-    cursor: pointer;
-    bottom: 0;
+      position: absolute;
+      text-decoration: underline;
+      cursor: pointer;
+      bottom: 0;
     }
 
     &Quantity {
       position: absolute;
       bottom: 0;
       right: 0;
+      display: flex;
+      align-items: center;
 
       &Value {
         margin: 20px;
+      }
+
+      &Btn {
+        cursor: pointer;
+        font-size: 20px;
       }
 
       &--disable {
